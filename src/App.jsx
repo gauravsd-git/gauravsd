@@ -3,7 +3,9 @@ import HeroSection from './pages/HeroSection'
 
 const App = () => {
   return (
-     <HeroSection/>
+    <>
+    <HeroSection/>
+    </>
   )
 }
 
