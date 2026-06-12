@@ -1,10 +1,11 @@
 import React from 'react'
-import HeroSection from './pages/HeroSection'
-
+// import HeroSection from './pages/HeroSection'
+import GauravPortfolio from './pages/LandingPage';
 const App = () => {
   return (
     <>
-    <HeroSection/>
+     <GauravPortfolio />
+    {/* <HeroSection/> */}
     </>
   )
 }
