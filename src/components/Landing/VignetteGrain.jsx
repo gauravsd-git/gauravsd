@@ -1,13 +1,13 @@
 export default function VignetteGrain() {
   return (
     <div
-      className="grain-vignette"
-      style={{
-        position: "absolute",
-        inset: 0,
-        zIndex: 1,
-        pointerEvents: "none",
-      }}
+      className="
+        grain-vignette
+        absolute
+        inset-0
+        z-1
+        pointer-events-none
+      "
     />
   );
 }

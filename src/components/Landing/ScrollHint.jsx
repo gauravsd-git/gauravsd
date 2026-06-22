@@ -1,34 +1,30 @@
 export default function ScrollHint() {
   return (
-    <div
-      className="inter"
-      style={{
-        position: "absolute",
-        top: "50%",
-        right: 44,
-        zIndex: 10,
-        transform: "translateY(-50%)",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 8,
-        color: "rgba(240,237,232,0.4)",
-        fontSize: 10,
-        letterSpacing: "0.12em",
-        textTransform: "uppercase",
-        writingMode: "vertical-rl",
-      }}
-    >
-      scroll
-      <span
-        className="scroll-line"
-        style={{
-          display: "block",
-          width: 1,
-          height: 48,
-          background: "linear-gradient(to bottom, rgba(240,237,232,0.4), transparent)",
-        }}
-      />
-    </div>
+  <div
+        className="
+      inter
+      absolute top-1/2 right-11 z-10
+      -translate-y-1/2
+      flex flex-col items-center
+      gap-2
+      text-[15px]
+      uppercase
+      tracking-[0.12em]
+      text-[rgba(240,237,232,0.4)]
+      [writing-mode:vertical-rl]
+      "
+      >
+        scroll
+        <span
+          className="
+          scroll-line
+          block
+          h-12.5 w-0.5
+          bg-linear-to-b
+          from-[rgba(240,237,232,0.4)]
+          to-transparent
+          "
+        />
+      </div>
   );
 }

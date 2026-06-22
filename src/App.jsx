@@ -1,12 +1,15 @@
 import React from 'react'
-// import HeroSection from './pages/HeroSection'
 import LandingPage from './pages/LandingPage';
-import About from './pages/About';
+import Banner from './pages/Banner';
+import InspoPage from "./pages/InspoPage";
 const App = () => {
   return (
     <>
      <LandingPage />
-     <About/>
+     <Banner/>
+     {/* <section className="relative z-20 mt-[-55vh]">  */}
+      <InspoPage /> 
+      {/* </section> */}
     </>
   )
 }

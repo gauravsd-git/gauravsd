@@ -1,18 +1,18 @@
 export default function TopRightText() {
   return (
     <div
-      className="inter"
-      style={{
-        position: "absolute",
-        top: 36,
-        right: 44,
-        zIndex: 10,
-        fontSize: 13,
-        fontWeight: 300,
-        lineHeight: 1.65,
-        maxWidth: 340,
-        textAlign: "right",
-      }}
+      className="
+        inter
+        absolute
+        top-9
+        right-11
+        z-10
+        max-w-85
+        text-right
+        text-[13px]
+        font-light
+        leading-[1.65]
+      "
     >
       Passionate Creative Designer and Developer, dedicated to crafting
       innovative solutions and exceptional digital experiences through
