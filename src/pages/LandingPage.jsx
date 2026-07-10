@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import myImage from "../assets/myimage.png";
 
-import GLOBAL_CSS from "../components/landing/GlobalStyles.jsx";
-import TopLeftText from "../components/landing/TopLeftText.jsx";
-import TopRightText from "../components/landing/TopRightText.jsx";
-import Headline from "../components/landing/Headline.jsx";
-import Navbar from "../components/landing/Navbar.jsx";
-import A_dot from "../components/landing/A_dot.jsx";
-import ScrollHint from "../components/landing/ScrollHint.jsx";
-import VignetteGrain from "../components/landing/VignetteGrain.jsx";
+import GLOBAL_CSS from "../components/Landing_com/GlobalStyles.jsx";
+import TopLeftText from "../components/Landing_com/TopLeftText.jsx";
+import TopRightText from "../components/Landing_com/TopRightText.jsx";
+import Headline from "../components/Landing_com/Headline.jsx";
+import Navbar from "../components/Landing_com/Navbar.jsx";
+import A_dot from "../components/Landing_com/A_dot.jsx";
+import ScrollHint from "../components/Landing_com/ScrollHint.jsx";
+import VignetteGrain from "../components/Landing_com/VignetteGrain.jsx";
 
 export default function LandingPage() {
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden text-white">
+    <div className="relative min-h-screen overflow-hidden text-white"> 
       <img
         src={myImage}
         alt="Gaurav Vishwakarma"
