@@ -1,24 +1,68 @@
 import React, { useState } from "react";
-import { ArrowUpRight, X } from "lucide-react";
+import { ArrowUpRight, X, Mail, Phone, MapPin } from "lucide-react";
 
 const Banner = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <section className="relative mt-4 mb-4 mx-12 h-50 font-body">
+      <section className="relative mt-4 mb-2 mx-10 h-55 font-body">
 
-        {/* Left Text */}
-        <div className="absolute left-0 top-4 w-150 leading-relaxed font-bold">
-          I build modern web applications with a focus on performance,
-          scalability, and clean user experiences. Combining backend
-          engineering with thoughtful frontend execution, I create digital
-          products that are reliable, efficient, and built to deliver real
-          value.
+        {/* Left Text ----------------------------------------------------------------------------------------------------- */}
+        <div className="absolute left-0 top-1 w-150 leading-relaxed font-bold">
+          {/* Big CTA heading */}
+          <div>
+            <h2
+              className="font-bold leading-tight text-black"
+              style={{ fontSize: "clamp(19px, 3vw, 45px)", fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.01em" }}
+            >
+              Let's build something
+              <span className="text-zinc-500"> great together</span>
+            </h2>
+          </div>
         </div>
 
+        {/* Contact details */}
+        <div className="absolute mt-14 flex flex-col gap-2">
+          <a
+            href="mailto:gaurav@email.com"
+            className="flex items-center gap-3 group w-fit"
+          >
+            <span className="flex items-center justify-center w-8 h-8 rounded-full border border-black/15 group-hover:border-black transition-all">
+              <Mail size={14} />
+            </span>
+            <span className="text-[14px] text-gray-500 group-hover:text-black transition-colors inter">
+              vishwakarmagaurav013@gmail.com {/* ← replace */}
+            </span>
+          </a>
+
+          <a
+            href="tel:+910000000000"
+            className="flex items-center gap-3 group w-fit"
+          >
+            <span className="flex items-center justify-center w-8 h-8 rounded-full border border-black/15 group-hover:border-black transition-all">
+              <Phone size={14} />
+            </span>
+            <span className="text-[14px] text-gray-500 group-hover:text-black transition-colors inter">
+              +91 98893 84863 {/* ← replace */}
+            </span>
+          </a>
+
+          <div className="flex items-center gap-3">
+            <span className="flex items-center justify-center w-8 h-8 rounded-full border border-black/15">
+              <MapPin size={14} />
+            </span>
+            <span className="text-[14px] text-gray-500 inter">
+              India {/* ← replace */}
+            </span>
+          </div>
+        </div>
+
+
+        {/* ------------------------------------------------------------------------------------------------------------- */}
+
         {/* Right Side */}
-        <div className="absolute right-0 top-4 w-100 text-right">
+        <div className="absolute right-0 top-1 w-120 text-right">
           <p className="text-gray-600 leading-relaxed">
             The fusion of my passion for design, development, and seamless
             user experiences places me at the intersection of creativity and
@@ -26,7 +70,7 @@ const Banner = () => {
           </p>
 
           {/* Text + Icon */}
-          <div className="mt-6 flex items-center justify-end gap-3">
+          <div className="mt-7 flex items-center justify-end gap-3">
 
             <span className="text-3xl font-heading">
               More about me
@@ -42,6 +86,27 @@ const Banner = () => {
 
           </div>
         </div>
+
+
+
+        {/* Bottom side */}
+        {/* ------------------------------------------------------------------------------------------------------------------ */}
+        <div className="absolute items-center align-bottom bottom-0 w-full ">
+          {/* ── DIVIDER ── */}
+          <div className=" mx-10 md:mx-0 border-t border-black/10" />
+
+          {/* ── FOOTER BAR ── */}
+          <div className="mx-0 md:mx0 py-2 flex flex-col md:flex-row items-center justify-between">
+            <span className="inter text-[12px] text-gray-400">
+              © {new Date().getFullYear()} Gaurav Vishwakarma. All rights reserved.
+            </span>
+            <span className="inter text-[12px] text-gray-400">
+              Designed &amp; built by Gaurav Vishwakarma
+            </span>
+          </div>
+        </div>
+
+
       </section>
 
       {/* Modal */}
