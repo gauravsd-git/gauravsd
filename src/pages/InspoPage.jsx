@@ -1,14 +1,14 @@
-import inspoBg from "../assets/inspoBg1.jpg";
+import inspoBg from "../assets/inspoBg.jpg";
 
 export default function InspoPage() {
 return ( <section
    className="
      relative
-     min-h-screen
+     h-158
      text-white
-     px-12
-     md:px-20
-     py-20
+     px-10
+     md:px-10
+     py-23
      flex
      flex-col
      justify-between
@@ -29,8 +29,8 @@ return ( <section
      "
    />
   {/* FIRST TEXT BLOCK */}
-  <div className="relative z-10">
-    <h1 className="font-heading text-[72px] leading-[0.92] font-light border w-fit">
+  <div className="relative z-2">
+    <h1 className="font-heading text-[72px] leading-[0.92] font-light w-fit">
       Design as
       <br />
       balance between
@@ -46,7 +46,7 @@ return ( <section
   </div>
 
   {/* SECOND TEXT BLOCK */}
-  <div className="relative z-10 font-heading tracking-[0.12em] self-end text-right border">
+  <div className="relative z-10 font-heading tracking-[0.12em] self-end text-right">
     <h2 className="text-[72px] leading-[0.92] font-light">
       BUILD
       <br />
