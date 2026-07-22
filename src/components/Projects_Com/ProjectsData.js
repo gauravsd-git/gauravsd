@@ -30,7 +30,7 @@ const PROJECTS = [
     description:
        'A "Blogging Application" built with "Spring Boot", serving as a mini social media platform where users can register, log in, create posts, like posts, and comment on articles. This project is under development and is part of a learning journey following an online course, implementing "MVC architecture", "JWT authentication", and "Spring Security".',
     tags: ["Java", "Spring Boot", "JWT", "Maven"],
-    year: "Sep - Oct : 2026",
+    year: "Sep - Oct : 2025",
     link: "https://github.com/gauravsd-git/Blogging-App-.git",
     bg: "#0e0e0e",
     accent: "#f472b6",

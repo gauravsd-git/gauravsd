@@ -32,7 +32,7 @@ const Banner = () => {
               <Mail size={14} />
             </span>
             <span className="text-[14px] text-gray-500 group-hover:text-black transition-colors inter">
-              vishwakarmagaurav013@gmail.com {/* ← replace */}
+              vishwakarmagaurav013@gmail.com 
             </span>
           </a>
 
@@ -44,7 +44,7 @@ const Banner = () => {
               <Phone size={14} />
             </span>
             <span className="text-[14px] text-gray-500 group-hover:text-black transition-colors inter">
-              +91 98893 84863 {/* ← replace */}
+              +91 98893 84863 
             </span>
           </a>
 
@@ -53,7 +53,7 @@ const Banner = () => {
               <MapPin size={14} />
             </span>
             <span className="text-[14px] text-gray-500 inter">
-              India {/* ← replace */}
+              Noida, India 
             </span>
           </div>
         </div>

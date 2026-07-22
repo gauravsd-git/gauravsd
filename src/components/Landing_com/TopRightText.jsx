@@ -7,16 +7,18 @@ export default function TopRightText() {
         top-9
         right-11
         z-10
-        max-w-85
+        max-w-132
         text-right
         text-[13px]
         font-light
         leading-[1.65]
       "
     >
-      Passionate Creative Designer and Developer, dedicated to crafting
-      innovative solutions and exceptional digital experiences through
-      modern technologies
+      I build modern web applications with a focus on performance,
+      scalability, and clean user experiences. Combining backend
+      engineering with thoughtful frontend execution, I create digital
+      products that are reliable, efficient, and built to deliver real
+      value.
     </div>
   );
 }
