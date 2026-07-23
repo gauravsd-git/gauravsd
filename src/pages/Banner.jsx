@@ -123,18 +123,23 @@ const Banner = () => {
             </button>
 
             <h2 className="mb-4 text-3xl font-bold">
-              I’m Gaurav Vishwakarm
+              I'm Gaurav Vishwakarma
             </h2>
 
             <p className="leading-8 text-gray-600">
               A Full Stack Developer who enjoys building software from idea to execution. From backend systems to polished interfaces, I focus on creating applications that are practical, scalable, and built with purpose.
             </p>
-            <p className="leading-8 text-gray-600">
-
-              My approach combines engineering discipline with product thinking—turning concepts into reliable digital experiences that perform well and deliver real value.
+            <p className="leading-8 text-gray-600 mt-4">
+              My interest in this field started with simple curiosity — wanting to understand how things actually work under the hood. That curiosity turned into building things myself, and eventually into a deeper focus on full-stack development: designing systems, structuring clean architecture, and shipping applications end to end.
             </p>
-            <p className="leading-8 text-gray-600">
-              Beyond writing code, I’m interested in how products are built, how systems operate at scale, and how thoughtful engineering transforms ideas into experiences people actually use.
+            <p className="leading-8 text-gray-600 mt-4">
+              My approach combines engineering discipline with product thinking—turning concepts into reliable digital experiences that perform well and deliver real value. I care about the decisions that happen before a single line of code is written: how a system is designed, how data flows, and how it holds up as it grows.
+            </p>
+            <p className="leading-8 text-gray-600 mt-4">
+              Outside of writing code, I spend a lot of time reading and self-learning — whether that's diving deeper into system design, exploring new tools, or just following ideas I'm curious about.
+            </p>
+            <p className="leading-8 text-gray-600 mt-4">
+              Right now, I'm actively building, learning, and open to new opportunities — always happy to connect, so feel free to reach out.
             </p>
 
           </div>

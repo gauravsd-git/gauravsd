@@ -62,17 +62,18 @@ const NAV_LINKS = [
   },
   {
     Icon: Code2,
-    label: "Projects",
-    href: "/projects",
-    external: false,
+    label: "Leetcode",
+    href: "https://leetcode.com/u/gaurav_sd/",
+    external: true,
     lucide: true,
   },
   {
     Icon: FileText,
     label: "Resume",
     href: "/resume.pdf",
-    external: true,
+    external: false,
     lucide: true,
+    download: true,
   },
 ];
 
@@ -82,46 +83,63 @@ export default function Navbar() {
       aria-label="Navigation"
       className="fixed bottom-5.5 left-1/2 z-30 flex -translate-x-1/2 gap-3 "
     >
-      {NAV_LINKS.map(({ Icon, label, href, external, lucide }) => (
-       
-        <a
-          key={label}
-          href={href}
-          aria-label={label}
-          {...(external
-            ? {
-              target: "_blank",
-              rel: "noopener noreferrer",
-            }
-            : {})}
-          className="
-          flex h-12 w-12 items-center justify-center
+      {NAV_LINKS.map(({ Icon, label, href, external, lucide, download }) => (
+        <div key={label} className="group relative">
+          <a
+            href={href}
+            aria-label={label}
+            {...(external
+              ? {
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                }
+              : {})}
+            {...(download
+              ? { download: "Gaurav_Vishwakarma_Resume.pdf" }
+              : {})}
+            className="
+              flex h-12 w-12 items-center justify-center
+              rounded-full
+              bg-black
+              border border-white/15
+              text-zinc-300
+              backdrop-blur-xl
+              transition-all duration-300
+              hover:bg-black/18
+              hover:text-white
+              hover:border-white/25
+              active:scale-95
+              "
+          >
+            {lucide ? (
+              <Icon size={19} strokeWidth={1.6} />
+            ) : (
+              <Icon />
+            )}
+          </a>
 
-  rounded-full
-
-  bg-black
-  border border-white/15
-
-  text-zinc-300
-
-  backdrop-blur-xl
-
-  transition-all duration-300
-
-  hover:bg-black/18
-  hover:text-white
-  hover:border-white/25
-
-  active:scale-95
-"
-        >
-          {lucide ? (
-            <Icon size={19} strokeWidth={1.6} />
-          ) : (
-            <Icon />
-          )}
-        </a>
-      ))}
+    {/* Tooltip */}
+    <span
+      className="
+      pointer-events-none
+      absolute -top-9 left-1/2 -translate-x-1/2
+      whitespace-nowrap
+      rounded-md
+      bg-black/90
+      px-2.5 py-1
+      text-xs text-white
+      border border-white/10
+      opacity-0
+      scale-95
+      transition-all duration-200
+      group-hover:opacity-100
+      group-hover:scale-100
+      "
+    >
+      {label}
+    </span>
+  </div>
+))}
     </nav>
   );
 }

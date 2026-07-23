@@ -14,9 +14,10 @@ export default function TopLeftText() {
     >
       <strong className="block font-medium">
         Hii, I am Gaurav Vishwakarma
+        <br />
+        Full Stack Developer [ Java · Spring Boot · React ]
       </strong>
 
-      A full stack java developer &amp; web designer
     </div>
   );
 }

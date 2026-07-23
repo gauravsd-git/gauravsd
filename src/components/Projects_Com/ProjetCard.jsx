@@ -20,8 +20,8 @@ export default function ProjectCard({ project, index }) {
         {/* Top row — number + year + link */}
         <div className="flex items-start justify-between mb-auto">
           <span
-            className="bebas text-[10px] leading-none select-none"
-            style={{ color: "rgba(255,255,255,0.06)" }}
+            className="bebas text-[65px] leading-none select-none"
+            style={{ color: "rgba(255,255,255,0.26)" }}
           >
             {project.number}
           </span>
@@ -50,7 +50,7 @@ export default function ProjectCard({ project, index }) {
         <div className="my-6">
           <h2
             className="bebas leading-none"
-            style={{ fontSize: "clamp(48px, 7vw, 96px)", color: "#f0ede8" }}
+            style={{ fontSize: "clamp(40px, 6vw, 86px)", color: "#f0ede8" }}
           >
             {project.title}
           </h2>
@@ -66,7 +66,7 @@ export default function ProjectCard({ project, index }) {
           </p>
 
           {/* Tags */}
-          <div className="flex flex-wrap gap-2 md:justify-end shrink-0">
+          <div className="flex flex-wrap gap-2 md:justify-start shrink-0">
             {project.tags.map((tag) => (
               <span
                 key={tag}

@@ -53,7 +53,7 @@ return ( <section
       THAT WORKS
       <br />
       <span className="text-zinc-500">
-        IMPLEMENT
+        SYSTEMS
       </span>
       <br />
       <span className="text-zinc-500">
