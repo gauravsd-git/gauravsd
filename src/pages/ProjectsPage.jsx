@@ -3,7 +3,7 @@ import GLOBAL_CSS from "../components/Landing_com/GlobalStyles.jsx";
 import Navbar     from "../components/Landing_com/Navbar.jsx";
 import ProjectsHeader from "../components/Projects_Com/ProjectsHeader.jsx";
 import ProjectCard from "../components/Projects_Com/ProjetCard.jsx";
-import PROJECTS       from "../components/Projects_Com/projectsData.js";
+import PROJECTS       from "../components/Projects_Com/ProjectsData.js";
 
 export default function ProjectsPage() {
   useEffect(() => {

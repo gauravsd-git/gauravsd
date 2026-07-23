@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import GLOBAL_CSS   from "../components/Landing_com/GlobalStyles.jsx";
 import SkillsHeader from "../components/Skills_Com/SkillsHeader.jsx";
 import SkillCard    from "../components/Skills_Com/SkillCard.jsx";
-import SKILLS       from "../components/Skills_Com/skillsData.js";
+import SKILLS       from "../components/Skills_Com/SkillsData.js";
 
 export default function SkillsPage() {
   useEffect(() => {
