@@ -4,14 +4,31 @@ export default function TopRightText() {
       className="
         inter
         absolute
-        top-9
-        right-11
+        left-5
+        right-5
+        top-26.25
         z-10
-        max-w-132
-        text-right
-        text-[13px]
+
+        text-center
+        text-[10px]
         font-light
-        leading-[1.65]
+        leading-normal
+        text-white/85
+
+        sm:left-7
+        sm:right-7
+        sm:top-28.75
+        sm:text-[11px]
+
+        md:left-auto
+        md:right-11
+        md:top-9
+        md:max-w-132
+
+        md:text-right
+        md:text-[13px]
+        md:leading-[1.65]
+        md:text-white
       "
     >
       I build modern web applications with a focus on performance,

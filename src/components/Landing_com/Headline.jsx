@@ -5,7 +5,12 @@ export default function Headline() {
   const items = [...Array(COPIES)].map((_, i) => (
     <span
       key={i}
-      className="bebas inline-flex items-center whitespace-nowrap"
+      className="
+        bebas
+        inline-flex
+        items-center
+        whitespace-nowrap
+      "
     >
       {HEADLINE}
 
@@ -26,9 +31,14 @@ export default function Headline() {
     <div
       className="
         absolute
-        bottom-22.5     
+        bottom-26.25
         inset-x-0
         z-10
+        overflow-hidden
+
+        sm:bottom-27.5
+
+        md:bottom-22.5
       "
       aria-label={HEADLINE}
     >
@@ -36,8 +46,14 @@ export default function Headline() {
         className="
           marquee-track
           bebas
-          text-[clamp(60px,11.5vw,155px)]
-          leading-[0.9]
+
+          text-[17vw]
+          leading-[0.88]
+
+          sm:text-[14vw]
+
+          md:text-[clamp(60px,11.5vw,155px)]
+          md:leading-[0.9]
         "
       >
         {items}

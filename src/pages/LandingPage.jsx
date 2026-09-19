@@ -25,7 +25,17 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden text-white"> 
+    <div
+      className="
+        relative
+        h-screen
+        min-h-150
+        w-full
+        overflow-hidden
+        bg-[#111010]
+        text-white
+      "
+    >
       <img
         src={myImage}
         alt="Gaurav Vishwakarma"
@@ -36,10 +46,12 @@ export default function LandingPage() {
           h-full
           w-full
           object-cover
-          object-[center_top]
+          object-[50%_top]
           grayscale
           contrast-[1.06]
           brightness-[0.85]
+
+          max-sm:object-[52%_top]
         "
       />
 
@@ -55,6 +67,7 @@ export default function LandingPage() {
 
       <A_dot />
 
+      {/* Keep floating navbar exactly as it is */}
       <Navbar />
     </div>
   );
